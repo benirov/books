@@ -20,7 +20,7 @@ export class HomePage {
     this.search;
     this.books = this.httpClient.get('http://localhost:8080/api/books/0/10');
     this.books
-    .subscribe(data => {
+    .subscribe(data => {  
       
       this.listBooks = data['book'];
       console.log(this.listBooks);
