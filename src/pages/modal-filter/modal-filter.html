@@ -1,0 +1,38 @@
+<!--
+  Generated template for the ModalFilterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>modal-filter</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ul class="filters" radio-group>
+    <li>
+      <ion-label (click)="listCategory(Author)">Autor</ion-label>
+      
+    </li>
+  
+  
+    <li>
+      <ion-label (click)="listCategory(Nombre)">Nombre</ion-label>
+      
+    </li>
+  
+  
+    <li>
+      <ion-label (click)="listCategory(Categoria)">Categoria</ion-label>
+      
+    </li>
+  </ul>
+  <ion-buttons center>
+    <button ion-button end (click)="aplicarFiltros()">
+      Aplicar
+    </button>
+</ion-buttons>
+</ion-content>

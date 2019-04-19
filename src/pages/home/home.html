@@ -7,8 +7,33 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <ion-thumbnail slot="start">
+      <img class="imgIcon" src="assets/imgs/icon.png">
+    </ion-thumbnail>
+    <br>
+      <ion-toolbar>
+        <ion-searchbar (ionChange)="search($event)"></ion-searchbar>
+      </ion-toolbar>
+      <ion-buttons end>
+        <button ion-button end (click)="presentModalFilter()">
+          <ion-icon ios="ios-options" md="md-options"></ion-icon>&nbsp;Filtros
+        </button>
+    </ion-buttons>  
+    <ion-grid>
+        <ion-row>
+            <ion-col col-6 *ngFor="let books of listBooks" style="margin: auto;">
+                <ion-card style="width: auto; margin: auto;">
+                    <ion-card-header>
+                        <ion-avatar>
+                            <img src="assets/imgs/books.png">
+                          </ion-avatar>
+                      <ion-label class="my-label">{{ books.author_sort }}</ion-label>
+                      <div class="white-space: normal;">
+                        <label class="my-labeltitle">{{ books.title }}</label> 
+                    </div>
+                    </ion-card-header>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>   
 </ion-content>

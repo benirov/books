@@ -1,3 +1,26 @@
 page-home {
 
 }
+
+.imgIcon
+{
+    width: 100px;
+    margin: 0 auto;
+}
+
+.filters {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+
+    li {
+         text-align: center;
+    }
+ }
+
+ .my-label {
+    font-size: 8px;
+  }
+  .my-labeltitle {
+    font-size: 10px;
+  }
