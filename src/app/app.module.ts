@@ -8,7 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ModalFilterPageModule } from '../pages/modal-filter/modal-filter.module';
 import { ModalCategoryPageModule } from '../pages/modal-category/modal-category.module';
-import { HttpClientModule } from '@angular/common/http';  
+import { HttpClientModule } from '@angular/common/http'; 
 
 
 @NgModule({
