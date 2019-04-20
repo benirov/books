@@ -16,6 +16,7 @@ export class ModalFilterPage implements OnInit {
 
   ngOnInit() {
     console.table(this.navParams);
+    console.log("angular");
     
   }
 

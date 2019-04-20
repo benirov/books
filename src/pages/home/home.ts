@@ -25,6 +25,7 @@ export class HomePage {
       this.listBooks = data['book'];
       console.log(this.listBooks);
     })
+    console.log("node-api");
     
     
   }
